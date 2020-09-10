@@ -6,8 +6,6 @@ SELECT
 FROM 
 	`tabGL Entry`
 WHERE
-	(credit > 0 OR
-	 due_date < curdate()) AND
 	 docstatus = 1 AND
 	 party <> ''
 GROUP BY
